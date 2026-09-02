@@ -3,15 +3,17 @@
 
 void main()
 {
-    float a,b,ad,sb,ml;
-    float dv;
+    int a,b;
     clrscr();
-    printf("enter 2 values:");
+    printf("enter 2 values");
     scanf("%d %d",&a,&b);
-    ad = a + b;
-    sb = a - b;
-    ml = a * b;
-    dv = 1.0 * a / b;
-    printf("answers = %2f %2f %2f %2f\n",ad,sb,ml,dv);
+    if (a>b)
+       printf("%d > %d\n",a,b);
+    else
+    if (a < b)
+       printf("%d > %d\n",b,a);
+    else
+       printf("%d = %d\n",a,b);
+
     getch();
 }

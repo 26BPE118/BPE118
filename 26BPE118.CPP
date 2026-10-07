@@ -3,10 +3,13 @@
 
 void main()
 {
-    int i ;
-    clrscr();
-    for(i= 1; i<= 10; i++)
-	printf("%d",i);
-
-    getch();
+     int a[5], i;
+     clrscr();
+     printf("enter 5 values:");
+     for(i=0;i<5;i++)
+	scanf("values are:");
+     printf("values are:");
+     for(i=0;i<5;i++)
+	printf("%d",a[i]);
+     getch();
 }
